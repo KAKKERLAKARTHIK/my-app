@@ -1,10 +1,16 @@
-
-function ButtonCreation(){
-
+ 
+function 
+ButtonCreation({ButtonProperties}){
+   
+ const {width,Bgcolor,text}=ButtonProperties
+    
     return (
     <div>
-        <button>
-            log in
+        <button style={{
+            width,
+            backgroundColor:Bgcolor}}>{text}
+            
+            
         </button>
     </div>)
 }
