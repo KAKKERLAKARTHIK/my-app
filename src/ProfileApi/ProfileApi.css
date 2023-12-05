@@ -1,0 +1,10 @@
+.main{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-row-gap: 20px;
+    grid-column-gap: 10px;
+    margin-left: 3%;
+}
+.card:hover{
+box-shadow: 0 0 4px 2px black;
+}

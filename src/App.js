@@ -19,7 +19,10 @@ import CardCreation1 from './Card_creation/CardCreation';
 import Greeting from './Greeting/Greeting';
 import Subscribe from './YoutubButton/Youtub';
 import Map from './map/map';
+import Profile from './ProfileApi/ProfileApi';
+import Table from './table/Table';
  
+
 function App() {
   function GetGreetings(time){
     let greeting=""
@@ -66,7 +69,7 @@ function App() {
      }
    
     const RandomColor=() =>{
-      let c= Math.floor(Math.random()*16777215).toString(16);
+      let c= Math.floor(Math.random()*16777215).toString(16)
       return `#${c}`
      }
      function GetSeason( season){
@@ -80,12 +83,13 @@ function App() {
       } 
       return seasons
       }
-      
-
 return (
-  <>
-  <Subscribe/>
-  <Map/>
+  <div >
+    <Table/>
+  {/* <Subscribe/>
+  <Map/> */}
+  {/* <BasicExample/> */}
+  {/* <Profile/> */}
   {/* < Greeting greet={GetGreetings(new Date().getHours())}  day={GetDay(new Date().getDay())}   seasons={GetSeason(new Date().getMonth())}/> */}
   {/* <BasicExample/>  */}
   {/* <ButtonCreation   ButtonProperties={{width:100,Bgcolor:RandomColor(),text:"100px"
@@ -106,7 +110,7 @@ return (
 }}/> */}
 <div className="grid"> 
  {/* <ButtonCreation   text="sign up"  color="red"/> */}
-  
+  {/* <OrderdList/> */}
 {/* <ol> */}
 {/*<OrderdList/>
 </ol>
@@ -120,15 +124,294 @@ return (
  {/* <CardCreation1/>
 <CardCreation1/>
 <CardCreation1/> */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </div>
+{/* <Image_getting/> */}
 <div className='grid'>
 {/* <CardCreation1/>
 <CardCreation1/>
 <CardCreation1/> */}
 </div>
- {/* <Footer/>   */}
+ {/* <Footer/>    */}
 {/* <CardCreation/>  */}
-</>
+</div>
   )
  
 }

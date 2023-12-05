@@ -30,7 +30,7 @@ render(){
 return (
 
     <div key={this.state.ind}>
-<h1>{val.age}</h1>
+<h1>{val.name}</h1>
 
     </div>
 )
@@ -41,3 +41,5 @@ return (
 }
 }
 export default Map
+
+
